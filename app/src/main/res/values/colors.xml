@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="red">#980000</color>
+    <color name="white">#D2C7C7</color>
+    <color name="btred">#D53434</color>
+    <color name="black">#0F0000</color>
+    <color name="box_color">#EB8181</color>
+    <color name="black_box">#070000</color>
+</resources>

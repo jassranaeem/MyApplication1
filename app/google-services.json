@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "908762596690",
+    "firebase_url": "https://bloodly-75726.firebaseio.com",
+    "project_id": "bloodly-75726",
+    "storage_bucket": "bloodly-75726.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908762596690:android:69a6bfd2988ebad990a68b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908762596690-f700c5qripd05t5ra15glvd5351sg86e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1tFPpvdq-brgzrZuIByNOYlxmlYvSrgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908762596690-f700c5qripd05t5ra15glvd5351sg86e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

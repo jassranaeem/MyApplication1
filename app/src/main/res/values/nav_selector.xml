@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@android:color/white" name="button_navigation" android:state_enabled="true" type="navigation" />
+    <item android:color="@color/red" name="backcolor" android:state_enabled="false" type="navigation" />
+</resources>

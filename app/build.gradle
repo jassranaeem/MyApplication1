@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.myapplication1"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        useLibrary 'org.apache.http.legacy'
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Firebase cloud message
+    // Added these lines
+    implementation 'com.google.firebase:firebase-core:17.0.1'
+    implementation 'com.google.firebase:firebase-messaging:19.0.0'
+    implementation 'com.pusher:push-notifications-android:1.6.2'
+
+    //recycle view xml using picasoo library
+
+
+
+    // Multi Dex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //retrofit library to fetch Api
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'junit:junit:4.12'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    //for form validation library.
+
+    implementation 'com.basgeekball:awesome-validation:4.2'
+    // for map current location and map activation libraries.
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.karumi:dexter:5.0.0'
+    //for database connection library.
+    implementation 'com.android.volley:volley:1.1.0'
+    //mysql project library
+    implementation project (':mysql-connector-java-3.0.17-ga-bin')
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
